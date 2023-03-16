@@ -8,10 +8,16 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-blog-cip.netlify.app",
-  integrations: [image({
-    serviceEntryPoint: "@astrojs/image/sharp"
-  }), sitemap({
-    filter: page => page !== "https://astro-blog-cip.netlify.app/about/"
-  }), react(), tailwind(), mdx()]
+  site: "https://astro-complex-blog.vercel.app/",
+  integrations: [
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+    }),
+    sitemap({
+      filter: (page) => page !== "https://astro-complex-blog.vercel.app/about/",
+    }),
+    react(),
+    tailwind(),
+    mdx(),
+  ],
 });
