@@ -34,6 +34,7 @@ console.log(relatedPosts);
   {frontmatter}
   robots={frontmatter.robots}
 >
+  <PostHeader {title} {description} {date} {category} {image} {author} />
   <div class="post-content">
     <div class="content">
       <slot />
